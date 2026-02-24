@@ -64,4 +64,11 @@ let main args =
 <img width="1474" height="218" alt="image" src="https://github.com/user-attachments/assets/a714f9b8-fa19-41d9-b752-6d0e95e0b683" />
 <img width="1469" height="250" alt="image" src="https://github.com/user-attachments/assets/917007b4-34e7-42f0-ba10-305bab0a75d4" />
 
+## Задание 3
+### Текст задачи
+Опишите функции, осуществляющие основные математические операции над комплексными
+числами (сложение, вычитание, умножение, деление, возведение в степень). Использовать
+готовый класс Complex запрещено.
+### Алгоритм решения
+
 
