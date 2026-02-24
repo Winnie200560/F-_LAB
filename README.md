@@ -79,25 +79,25 @@ type comp_digit = {
 }
 
 // Функция сложения комплексных чисел
-let add_digit a b = {
+let add_digit (a : comp_digit) (b : comp_digit) : comp_digit = {
     D = a.D + b.D
     M = a.M + b.M
 }
 
 // Функция вычитания комплексных чисел
-let sub_digit a b = {
+let sub_digit (a : comp_digit) (b : comp_digit) : comp_digit = {
     D = a.D - b.D  
     M = a.M - b.M
 }
 
 // Функция умножения комплексных чисел
-let mul_digit a b = { 
+let mul_digit (a : comp_digit) (b : comp_digit) : comp_digit = { 
     D = a.D * b.D - a.M * b.M
     M = a.D * b.M + a.M * b.D 
 }
 
 // Функция деления комплексных чисел
-let div_digit a b =
+let div_digit (a : comp_digit) (b : comp_digit) : comp_digit =
     let d = b.D * b.D + b.M * b.M
     if d = 0 then 
          printfn "Ошибка! Деление на ноль"
@@ -108,7 +108,7 @@ let div_digit a b =
     }
 
 // Функция возведения комплексного числа в целую степень
-let rec power c p =
+let rec power (c : comp_digit) (p : int) : comp_digit =
     if p = 0 then { D = 1.0; M = 0.0 }
     elif p = 1 then c
     else mul_digit c (power c (p - 1))
