@@ -6,6 +6,7 @@
 ### Алгоритм решения
 ```
 open System
+
 let spisok x =
     [
     for i in 1..x do
@@ -36,6 +37,8 @@ let main args =
 ### Алгоритм решения
 ```
 open System
+
+// Функция для поиска минимальной цифры в числе
 let rec min_d n min =
     if n = 0 then min
     else
