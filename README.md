@@ -4,29 +4,13 @@
 ### Текст задачи
 Последовательно вводя числа, сформировать список из их последних цифр.
 ### Алгоритм решения
-```
-open System
+1. Пользовательно вводит количество чисел, которые он хочет ввести (n, n < 0 - обрабатывает ошибку);
+2. Функция ListForm:
+   - Считывает строку с введенным пользователем числом;
+   - От каждого числа обрабатывается последняя цифра и берется ее модуль;
+   - Далее оператор yield кладет обработанное число в формирующийся список;
 
-let spisok (x : int) : int list =
-    [
-    for i in 1..x do
-        printf "Введите число %d: " i
-        let num = int (Console.ReadLine())
-        yield abs (num % 10)
-    ]
-
-[<EntryPoint>]
-let main args = 
-    printf "Введите количество чисел для ввода: "
-    let n = int (Console.ReadLine())
-    if n > 0 then
-        printf "Список последних цифр: %A " (spisok n) 
-    else
-        printfn "Ошибка! Количество должно быть положительным числом."
-    0
-```
 ### Тестирование
-
 <img width="1478" height="749" alt="image" src="https://github.com/user-attachments/assets/6e6e6f9b-e732-4fee-a40e-2ab73bfbcbd6" />
 <img width="1482" height="442" alt="image" src="https://github.com/user-attachments/assets/75316b78-d3fd-4a23-bb45-8c03106b1a2b" />
 
