@@ -76,7 +76,6 @@
 4. Функция firstDigit находит первую цифру числа.
 5. List.fold проходит по списку, накапливает сумму только тех элементов, у которых первая цифра совпадает с заданной.
 6. Вывод итоговой суммы.
-
 ### Тестирование
 <img width="1474" height="277" alt="image" src="https://github.com/user-attachments/assets/c9d8f0e5-d833-486c-ab77-94e3bab312f1" />
 <img width="1477" height="248" alt="image" src="https://github.com/user-attachments/assets/0aff72ed-2855-4bf5-9d13-9c66bee14156" />
