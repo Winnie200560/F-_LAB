@@ -50,6 +50,22 @@
 <img width="1467" height="405" alt="image" src="https://github.com/user-attachments/assets/1d7d4a4b-9f08-4fba-91ef-ed6cb29c0f02" />
 <img width="1480" height="463" alt="image" src="https://github.com/user-attachments/assets/7cd8e663-53ac-409e-8db5-889132dcd7c1" />
 
+# Лабораторная №2
+## Задание 1
+### Текст задачи
+Получить список из сумм цифр натуральных чисел, содержащихся в исходном
+списке.
+### Алгоритм решения
+1. Пользователь вводит количество чисел в исходном списке.
+2. Функция ListDigit формирует список введенных пользователем чисел с помощью yield.
+3. Далее List.map применяет рекурсвную функцию SummDigit (вычисляет сумму цифр числа) к каждому элементу исходного списка.
+4. Результат - новый список сумм цифр каждого числа.
+
+### Тестирование
+<img width="1475" height="225" alt="image" src="https://github.com/user-attachments/assets/b730bf3b-f24d-4c91-b570-7c48b3b83c9a" />
+<img width="1480" height="114" alt="image" src="https://github.com/user-attachments/assets/5b362e76-d08b-4fb8-bad7-ea611ca6b76e" />
+<img width="1473" height="228" alt="image" src="https://github.com/user-attachments/assets/a89df410-57c3-4e5c-b2b8-9d332ed43867" />
+
 
 
 
